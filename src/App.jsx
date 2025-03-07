@@ -5,7 +5,6 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Wrapper from './pages/Wrapper'
 
 const App = () => {
   return (
@@ -14,7 +13,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/dashboard' element={<Wrapper><Dashboard/></Wrapper>}/>
+        <Route path='/dashboard' element={<Dashboard/>}/>
       </Routes>
     </BrowserRouter>
   )
